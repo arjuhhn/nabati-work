@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NABATI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#ffad01",
+            secondary: "#df0427",
+            white: "#ffffff",
+            light:"#e2d4ad",
+            brown:"#df0427",
+            yellow:"#ffd657",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    /* Toggle button */
+    #nav-mobile-btn.close span:first-child {
+            transform: rotate(45deg);
+            top: 4px;
+            position: relative;
+            background:" #B30C39";
+
+        }
+
+        #nav-mobile-btn.close span:nth-child(2) {
+            transform: rotate(-45deg);
+            margin-top: 0px;
+            background:" #B30C39";
+
+        }
+
+        /* Toggle button */
+  </style>
+</head>
+
+<body>
+  <header class="relative bg-primary md:h-20 h-16 sticky top-0 w-full z-50">
+    <div
+      class="flex md:justify-between justify-start items-center mx-auto h-full xl:px-0 max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 container">
+      <a href="index.html">
+        <img class="h-16 w-auto md:block hidden" src="images/logo.svg.png" alt="logo" />
+        <img class="h-10 w-auto md:hidden block" src="images/logo.svg.png" alt="logo" />
+      </a>
+      <nav id="nav"
+        class="md:relative absolute top-0 left-0 z-50 items-center md:flex flex md:flex-row flex-col justify-between hidden md:w-auto w-full md:h-24 h-64 md:py-0 pt-5 md:mt-0 mt-16 md:text-base text-sm text-secondary md:bg-transparent bg-white md:border-none border-b">
+        <a href="#home"
+          class="font-semibold duration-100 transition-color lg:mr-8 md:mr-4 mr-0 hover:text-white">HOME</a>
+        <a href="#about" 
+          class="font-semibold duration-100 transition-color lg:mr-8 md:mr-4 mr-0 hover:text-white">ABOUT</a>
+        <a href="#product"
+          class="font-semibold duration-100 transition-color lg:mr-8 md:mr-4 mr-0 hover:text-white">PRODUCTS</a>
+        <div class="flex-col w-full font-medium border-2 border-primary md:hidden block">
+          <a href="#contact"
+            class="relative inline-block w-full px-5 py-3 leading-none text-center bg-primary hover:bg-white text-white hover:text-secondary font-bold text-sm"></a>
+        </div>
+      </nav>
+      <a class="md:block hidden text-white bg-secondary px-4 py-2 rounded-full font-bold hover:text-secondary hover:bg-white"
+        href="#contact">CONTACT</a>
+      <div id="nav-mobile-btn"
+        class="absolute top-0 right-0 md:hidden block w-6 cursor-pointer select-none md:mt-10 mt-5 mr-5">
+        <span class="block w-full h-1 mt-2 sm:mt-1 duration-200 transform bg-secondary rounded-full"></span>
+        <span class="block w-full h-1 mt-1 duraion-200 transform bg-secondary rounded-full"></span>
+      </div>
+    </div>
+  </header>
+  <section id="home" class="" style="
+      
+        background-image: url(images/MacBook\ Pro\ 16_\ -\ 2.jpg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+
+      ">
+    <div class=" container mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 md:py-40 py-10">
+      <h1 class=" md:text-right text-center md:text-5xl sm:text-4xl text-3xl	font-extrabold	 text-brown">NABATI
+  <br> FOOD</h1>
+      <div class="md:text-right text-center md:pt-10 pt-4"><a
+          class="md:text-base text-xs text-white bg-secondary md:px-4 md:py-2 px-3 py-1 rounded-full font-bold hover:text-white hover:bg-transparent  "
+          href="contact.html">Read more</a>
+      </div>
+  </section>
+
+  <!-- section 1 -->
+  <section id="about">
+    <div class="container mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 md:py-20 py-10 bg-white flex items-center justify-between md:flex-nowrap flex-wrap	">
+      <div class="md:order-1 order-2  md:text-left text-center">
+        <h2 class="text-secondary md:text-4xl	sm:text-3xl text-2xl font-bold md:pb-4 pb-2 ">Nabati Wafer</h2>
+        <p class="md:text-base sm:text-sm text-xs text-black "> The company was founded in 2014 and has four signature product lines including dairy-free cheesecakes, cheese alternatives, plant-based meats, and plant-based eggs1. Nabati products are distributed in Canada and the U.S. through grocery, foodservice, and industrial channels1.</p>
+      </div>
+      <div class="md:order-2 order-1 md:pl-20 pl-5 md:pr-0 pr-5">
+        <img src="images/Rectangle 102.png.webp" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="bg-primary" id="product">
+    <div class="container mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 md:py-20 py-10 	">
+    <h2 class=" text-center text-secondary md:text-4xl	sm:text-3xl text-2xl font-bold md:pb-4 pb-2	">Products</h2>
+    <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+      <div class="p-5"><img src="images/product-1.png.webp" alt=""><p class="text-center font-bold text-white md:text-2xl sm:text-xl text-lg">Milk Vanila</p></div>
+      <div class="p-5"><img src="images/product-2.png.png" alt=""><p class="text-center font-bold text-white md:text-2xl sm:text-xl text-lg">Cocoa Cream</p></div>
+      <div class="p-5"><img src="images/product-3.png.webp" alt=""><p class="text-center font-bold text-white md:text-2xl sm:text-xl text-lg">Coconut Flavoured</p></div>
+      <div class="p-5"><img src="images/product-4.png.webp" alt=""><p class="text-center font-bold text-white md:text-2xl sm:text-xl text-lg">Chese Cream</p></div>
+      <div class="p-5"><img src="images/product-5.png.webp" alt=""><p class="text-center font-bold text-white md:text-2xl sm:text-xl text-lg">Cream Wafer</p></div>
+      <div class="p-5"><img src="images/product-6.png.webp" alt=""><p class="text-center font-bold text-white md:text-2xl sm:text-xl text-lg">Cocoa Cream</p></div>
+    </div>
+    </div>
+  </section>
+  <!-- Section -->
+  <!-- <section class=""
+  style="
+      
+        background-image: url(image/coffee.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+
+      ">
+    <div class="container mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 md:py-20 py-10 	">
+      <div class="md:pr-72 sm:pr-60 pr-40">
+      <h2 class=" text-white md:text-4xl	sm:text-3xl text-2xl font-bold md:pb-4 pb-2">What's Special About Java Coffee Beans?</h2>
+      <p class="md:text-base sm:text-sm text-xs text-white ">Grown from rich volcanic soil on the beautiful islands of Java, Indonesia; these beans deliver a rich, aromatic taste that makes it one of the most popular coffee beans in the world. Taste the difference yourself!</p>
+    </div>
+    </div>
+  </section> -->
+  <section id="contact" class="container mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 md:py-20">
+    <h2 class=" text-center text-secondary md:text-4xl	sm:text-3xl text-2xl font-bold md:pb-4 pb-2	">Contact</h2>
+    <div class="flex items-center justify-center p-12">
+      <div class="mx-auto w-full max-w-[550px]">
+        <form action="https://formbold.com/s/FORM_ID" method="POST">
+          <div class="mb-5">
+            <label
+              for="name"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Full Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            />
+          </div>
+          <div class="mb-5">
+            <label
+              for="email"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Email Address
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@domain.com"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            />
+          </div>
+          <div class="mb-5">
+            <label
+              for="subject"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Subject
+            </label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Enter your subject"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            />
+          </div>
+          <div class="mb-5">
+            <label
+              for="message"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Message
+            </label>
+            <textarea
+              rows="4"
+              name="message"
+              id="message"
+              placeholder="Type your message"
+              class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            ></textarea>
+          </div>
+          <div>
+            <button
+              class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+        
+                </p>
+                <p class="leading-relaxed text-xl text-gray-900 mt-8">
+                </p>
+      </div>
+     
+    </div>
+  </section>
+  <footer class="bg-gray-100">
+    <div class="container mx-auto max-w-7xl xl:px-0 lg:px-14 md:px-10 px-5 md:py-20 py-10 ">
+      <div class="grid md:grid-cols-4  grid-cols-1	md:justify-items-center justify-items-start	 sm:-mx-4 md:py-4">
+        <div class="px-4">
+          <ul class="list-none footer-links">
+            <div>
+              <a href="index.html">
+                <img
+                  class="h-10 w-auto md:block hidden bg-third"
+                  src="/images/logo.svg.png"
+                  alt="logo"
+                />
+                <img
+                  class="h-6 w-auto md:hidden block bg-third"
+                  src="images/logo.png"
+                  alt="logo"
+                />
+              </a>
+              <p class="py-3">NABATI: Immerse yourself in the crunchy taste of Nabati Richeese Cheese Cream Wafer Biscuits..</p>
+              <div class="flex">
+              <div class="flex">
+              <i class="fa-brands fa-whatsapp text-2xl pr-3"></i>
+              <i class="fa-brands fa-instagram text-2xl pr-3"></i>
+              <i class="fa-brands fa-facebook text-2xl pr-3"></i>
+              <i class="fa-brands fa-twitter text-2xl pr-3"></i>
+              </div>
+            </div>
+          </ul>
+        </div>
+           
+       
+        <div class="px-4 ">
+          <h5 class="text-xl font-bold py-4">USEFULL LINKS</h5>
+          <ul class="list-none footer-links">
+            <li class="mb-2">
+              <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Home</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">About</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Products</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="px-4 ">
+          <h5 class="text-xl font-bold py-4">Help</h5>
+          <ul class="list-n4 one footer-links">
+            <li class="mb-2">
+              <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Support</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Help Center</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="px-4 ">
+          <h5 class="text-xl font-bold py-4 sm:text-center xl:text-left">Stay connected</h5>
+          <div class="flex sm:justify-center xl:justify-start">
+            <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600">
+              <i class="fab fa-discord"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      
+    </div>
+  </footer>
+
+  <div class="bg-primary py-3 ">
+    <p class="text-center text-light text-lg font-medium">copyright@Nabati.com</p>
+</div>
+<script>// Toggle button
+  if (document.getElementById('nav-mobile-btn')) {
+      document.getElementById('nav-mobile-btn').addEventListener('click', function () {
+          if (this.classList.contains('close')) {
+              document.getElementById('nav').classList.add('hidden');
+              this.classList.remove('close');
+          } else {
+              document.getElementById('nav').classList.remove('hidden');
+              this.classList.add('close');
+          }
+      });
+  }
+  // Toggle button</script>
+</body>
+</html>
